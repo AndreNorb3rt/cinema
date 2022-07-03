@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0d1d0646-8985-4226-9406-beb96df3a5fb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jmix-screen-designer-tool-window-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jmix-studio-dbdrivers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/com.company.cinema.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/com.company.cinema.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/com.company.cinema.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jmix/hsqldb/cinema.lobs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jmix/hsqldb/cinema.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jmix/hsqldb/cinema.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jmix/hsqldb/cinema.script" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/bootRunMainClassName" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/CinemaApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/CinemaHall$JmixEntityEntry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/CinemaHall.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Client$JmixEntityEntry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Film$JmixEntityEntry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Film.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Seat$JmixEntityEntry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Seat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Session$JmixEntityEntry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Session.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Ticket$JmixEntityEntry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Ticket.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/User$JmixEntityEntry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/cinemahall/CinemaHallBrowse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/cinemahall/CinemaHallEdit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/client/ClientBrowse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/client/ClientEdit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/film/FilmBrowse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/film/FilmEdit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/login/LoginScreen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/main/MainScreen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/seat/SeatBrowse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/seat/SeatEdit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/session/SessionBrowse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/session/SessionEdit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/ticket/TicketBrowse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/ticket/TicketEdit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/user/UserBrowse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/user/UserEdit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/security/DatabaseUserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/security/FullAccessRole.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/META-INF/build-info.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/liquibase/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/liquibase/changelog/010-init-user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/liquibase/changelog/2022/06/30-010-5af64b74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/liquibase/changelog/2022/06/30-020-5af64b74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/liquibase/changelog/2022/06/30-030-5af64b74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/liquibase/changelog/2022/06/30-040-5af64b74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/liquibase/changelog/2022/06/30-050-5af64b74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/liquibase/changelog/2022/06/30-060-5af64b74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/liquibase/changelog/2022/06/30-070-5af64b74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/liquibase/changelog/2022/07/03-010-9b80f3e3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/messages_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/messages_ru_RU.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/orm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/cinemahall/cinema-hall-browse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/cinemahall/cinema-hall-edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/client/client-browse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/client/client-edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/film/film-browse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/film/film-edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/login/login-screen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/main/main-screen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/seat/seat-browse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/seat/seat-edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/session/session-browse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/session/session-edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/ticket/ticket-browse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/ticket/ticket-edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/user/user-browse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/user/user-edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/entitiesEnhancing/main/persistence/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/entitiesEnhancing/main/persistence/com/company/cinema/orm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/entitiesEnhancing/resources/main/com/company/cinema/orm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/entitiesEnhancing/resources/main/com/company/cinema/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/jmix-core-1.2.4.jar_c855c68193d8cdd1e3bb5d6fd3d113ca/io/jmix/core/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/jmix-data-1.2.4.jar_99ee9b91d951f660116419423ac06fee/io/jmix/data/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/jmix-datatools-1.2.4.jar_4e8963830328a8ada97fa6c174394607/io/jmix/datatools/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/jmix-datatools-ui-1.2.4.jar_fba4aa93bdb66795f3da023b613c8dbb/io/jmix/datatoolsui/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/jmix-eclipselink-1.2.4.jar_0958889b8c0c1e158094d7f2652e3689/io/jmix/eclipselink/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/jmix-localfs-1.2.4.jar_948d913012e6a60e69076012beeb617d/io/jmix/localfs/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/jmix-security-1.2.4.jar_e79344c6d8b57b44e1ed87a25bc083df/io/jmix/security/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/jmix-security-data-1.2.4.jar_34168fcfb9eaa4057a93bec5ce543e0e/io/jmix/securitydata/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/jmix-security-ui-1.2.4.jar_a65905267900dceb168c7adbaf31e4b3/io/jmix/securityui/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/jmix-ui-1.2.4.jar_b6ca1053033c6b48fb72515bf0f1e4d8/io/jmix/ui/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/jmix-ui-data-1.2.4.jar_8c9a60a1ea55765cf94cc5841b30051e/io/jmix/uidata/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/jmix-ui-export-1.2.4.jar_282a68b7c0e5bb5032a2f6bc8ac75e2b/io/jmix/uiexport/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmix-studio.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/CinemaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/CinemaHall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/Film.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/Seat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/cinemahall/CinemaHallBrowse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/cinemahall/CinemaHallEdit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/client/ClientBrowse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/client/ClientEdit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/film/FilmBrowse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/film/FilmEdit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/login/LoginScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/main/MainScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/seat/SeatBrowse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/seat/SeatEdit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/session/SessionBrowse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/session/SessionEdit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/ticket/TicketBrowse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/ticket/TicketEdit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/user/UserBrowse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/user/UserEdit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/security/DatabaseUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/security/FullAccessRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/liquibase/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/liquibase/changelog/010-init-user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/liquibase/changelog/2022/06/30-010-5af64b74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/liquibase/changelog/2022/06/30-020-5af64b74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/liquibase/changelog/2022/06/30-030-5af64b74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/liquibase/changelog/2022/06/30-040-5af64b74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/liquibase/changelog/2022/06/30-050-5af64b74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/liquibase/changelog/2022/06/30-060-5af64b74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/liquibase/changelog/2022/06/30-070-5af64b74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/liquibase/changelog/2022/07/03-010-9b80f3e3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/messages_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/messages_ru_RU.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/cinemahall/cinema-hall-browse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/cinemahall/cinema-hall-edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/client/client-browse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/client/client-edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/film/film-browse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/film/film-edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/login/login-screen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/main/main-screen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/seat/seat-browse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/seat/seat-edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/session/session-browse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/session/session-edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/ticket/ticket-browse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/ticket/ticket-edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/user/user-browse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/user/user-edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/cinema/CinemaApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cinema" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JmixEntity" />
+        <option value="JmixLiquibaseChangeLog" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="ce6e2d8e-6d3b-4477-be6a-8d8323d62d20" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BDGNhk5db1XTSPlrFYq0HzPjk2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.haulmont.jmixstudio.intellij.ui.cubatree.toolwindow.ToolWindowOpener.firstProjectStart&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Андрей/Desktop/cinema&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;363da8a199cfec29823448500da92224&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Gradle.Cinema Jmix Application">
+    <configuration name="Cinema Jmix Application" type="GradleRunConfiguration" factoryName="Gradle" isNew="false">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2">
+        <option name="JmixCleanConf">
+          <option name="enabled" value="true" />
+          <option name="new" value="false" />
+        </option>
+        <option name="JmixSyncDb">
+          <option name="enabled" value="true" />
+          <option name="new" value="false" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="CinemaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="com.company.cinema.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.cinema.CinemaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBootOptions">
+    <option name="autoCreateRunConfiguration" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d1d0646-8985-4226-9406-beb96df3a5fb" name="Changes" comment="" />
+      <created>1656433210854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656433210854</updated>
+      <workItem from="1656433212184" duration="5948000" />
+      <workItem from="1656587078996" duration="13189000" />
+      <workItem from="1656772912723" duration="1283000" />
+      <workItem from="1656787770587" duration="73000" />
+      <workItem from="1656850662279" duration="2217000" />
+      <workItem from="1656855552043" duration="980000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
