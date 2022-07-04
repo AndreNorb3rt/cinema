@@ -4,28 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d1d0646-8985-4226-9406-beb96df3a5fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/listener/SessionEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/liquibase/changelog/2022/07/03-020-9b80f3e3.xml" afterDir="false" />
+    <list default="true" id="0d1d0646-8985-4226-9406-beb96df3a5fb" name="Changes" comment="Add listener">
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/com.company.cinema.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.company.cinema.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.company.cinema.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.company.cinema.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.company.cinema.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.company.cinema.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Session.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Ticket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/build-info.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/build-info.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/com/company/cinema/messages_ru_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/messages_ru_RU.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/Session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/company/cinema/messages_ru_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/messages_ru_RU.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/cinema/listener/SessionEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/listener/SessionEventListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,8 +145,16 @@
       <workItem from="1656850662279" duration="2217000" />
       <workItem from="1656855552043" duration="13464000" />
       <workItem from="1656938833352" duration="33000" />
-      <workItem from="1656938919415" duration="745000" />
+      <workItem from="1656938919415" duration="8950000" />
     </task>
+    <task id="LOCAL-00001" summary="Add listener">
+      <created>1656939986997</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656939986997</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,5 +182,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add listener" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add listener" />
   </component>
 </project>
