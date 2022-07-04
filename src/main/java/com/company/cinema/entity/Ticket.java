@@ -33,8 +33,8 @@ public class Ticket {
     @Column(name = "COST", precision = 19, scale = 2)
     private BigDecimal cost;
 
-    @JoinColumn(name = "CLIENT_ID", nullable = false)
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "CLIENT_ID")
+    @ManyToOne(fetch = FetchType.LAZY)
     private Client client;
 
     public Client getClient() {

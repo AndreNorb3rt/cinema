@@ -81,6 +81,6 @@ public class Session {
     @InstanceName
     @DependsOnProperties({"cinemaHall", "film", "startTime", "endTime"})
     public String getInstanceName() {
-        return String.format("%s, %s, %s - %s", cinemaHall.getInstanceName(), film.getInstanceName(), startTime, endTime);
+        return String.format("%s, %s min, %s %s %s:%s - %s:%s", cinemaHall.getInstanceName(), film.getInstanceName(), startTime.getDayOfMonth(), startTime.getMonth(), startTime.getHour() , startTime.getMinute(), endTime.getHour() , endTime.getMinute());
     }
 }
