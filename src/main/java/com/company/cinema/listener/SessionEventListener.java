@@ -5,11 +5,17 @@ import com.company.cinema.entity.Seat;
 import com.company.cinema.entity.Session;
 import com.company.cinema.entity.Ticket;
 import io.jmix.core.DataManager;
+import io.jmix.core.event.EntityChangedEvent;
+import io.jmix.core.event.EntityLoadingEvent;
 import io.jmix.core.event.EntitySavingEvent;
+import io.jmix.ui.Dialogs;
+import io.jmix.ui.screen.Subscribe;
+import org.codehaus.groovy.control.messages.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
+import java.awt.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,21 +25,22 @@ public class SessionEventListener {
 
     @Autowired
     private DataManager dataManager;
+    private Dialogs dialogs;
 
     @EventListener
-    public void onSessionSaving(EntitySavingEvent<Session> event) {
-        if (event.isNewEntity()){
-            createTickets(event.getEntity());
-        }
+    public void onSessionChangedBeforeCommit(EntityChangedEvent<Session> event) {
+        //if (event.getType() == EntityChangedEvent.Type.DELETED){}
+
     }
-    private void createTickets(Session x){
-        List<Seat> seatInCinemaHall = dataManager.load(Seat.class)
-                .query("select c from Seat c ")
-                .list();//.stream().filter(e -> e.<Seat>getCinemaHall() == x.getCinemaHall());
-        Ticket newTicket = dataManager.create(Ticket.class);
-        newTicket.setSession(x);
-        newTicket.setSeat(seatInCinemaHall.get(0));
-        newTicket.setCost(seatInCinemaHall.get(0).getDefaultCost());
-        dataManager.save(newTicket);
+
+
+
+    @EventListener
+    public void onSessionSaving(EntitySavingEvent<Session> event){
+        //в load evente постоянно создются билеты(
+
+        //if (event.isNewEntity())
+        //    createTickets(event.getEntity());
     }
+
 }

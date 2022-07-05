@@ -12,7 +12,7 @@
       <map>
         <entry key="Component Hierarchy" value="true" />
         <entry key="Component Inspector" value="false" />
-        <entry key="Component Palette" value="true" />
+        <entry key="Component Palette" value="false" />
       </map>
     </option>
   </component>

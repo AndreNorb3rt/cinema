@@ -58,6 +58,7 @@
                 <button id="createBtn" action="sessionsTable.create"/>
                 <button id="editBtn" action="sessionsTable.edit"/>
                 <button id="removeBtn" action="sessionsTable.remove"/>
+                <button id="infoBtn" action=""/>
             </buttonsPanel>
         </groupTable>
         <hbox id="lookupActions" spacing="true" visible="false">
