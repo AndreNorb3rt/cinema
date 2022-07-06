@@ -10,8 +10,7 @@
         <item screen="Session_.browse" caption="msg://com.company.cinema.screen.session/sessionBrowse.menu"/>
         <item screen="Ticket.browse" caption="msg://com.company.cinema.screen.ticket/ticketBrowse.menu"/>
         <item screen="Client.browse" caption="msg://com.company.cinema.screen.client/clientBrowse.menu"/>
-        <item screen="ui_ManagedBeanInfo.browse"
-              caption="msg://com.company.cinema.screen.managedbeaninfo/managedBeanInfoBrowse.menu"/>
+        <item screen="Tickets.browse" caption="msg://com.company.cinema.screen.ticket/ticketsBrowse.menu"/>
     </menu>
 
 </menu-config>

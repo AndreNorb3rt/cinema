@@ -19,6 +19,7 @@ import java.util.List;
 public class SessionEdit extends StandardEditor<Session> {
     @Autowired
     private DataManager dataManager;
+    @Autowired
     private Notifications notifications;
     @Autowired
     private EntityStates entityStates;
@@ -26,43 +27,37 @@ public class SessionEdit extends StandardEditor<Session> {
 
     @Subscribe
     public void onBeforeCommitChanges(BeforeCommitChangesEvent event){
-        int sessionDuration = (getEditedEntity().getEndTime().getHour()*60+getEditedEntity().getEndTime().getMinute()
-                                - getEditedEntity().getStartTime().getHour()*60+getEditedEntity().getStartTime().getMinute());
-        if (sessionDuration < getEditedEntity().getFilm().getDuration()){
-            notifications.create().withCaption("The duration of the session is shorter than the duration of the film").show();
-            event.preventCommit();
+        if (entityStates.isNew(getEditedEntity())){
+            int sessionDuration = (getEditedEntity().getEndTime().getHour()*60+getEditedEntity().getEndTime().getMinute()
+                    - getEditedEntity().getStartTime().getHour()*60+getEditedEntity().getStartTime().getMinute());
+            if (sessionDuration < getEditedEntity().getFilm().getDuration()){
+                notifications.create().withCaption("The duration of the session is shorter than the duration of the film").show();
+                event.preventCommit();
+            }
+            else event.resume();
+            createTickets(getEditedEntity());
         }
-        else event.resume();
+
     }
 
     @Subscribe
     public void onAfterCommitChanges(AfterCommitChangesEvent event){
-        if (entityStates.isNew(getEditedEntity()))//не создаются
-            createTickets(getEditedEntity());
+
     }
 
     private void createTickets(Session x){
         List<Seat> seatInCinemaHall = dataManager.load(Seat.class)
-                .query("select c from Seat c") //where c.cinemaHall = x.cinemaHall")
+                .query("select c from Seat c, Session_ x where c.cinemaHall = x.cinemaHall")
                 .list();
         for (int i = 0; i < seatInCinemaHall.size(); i++) {
-                Ticket newTicket = dataManager.create(Ticket.class);
-                newTicket.setSession(x);
-                newTicket.setSeat(seatInCinemaHall.get(i));
-                newTicket.setCost(seatInCinemaHall.get(i).getDefaultCost());
-                dataManager.save(newTicket);
+            Ticket newTicket = dataManager.create(Ticket.class);
+            newTicket.setSession(x);
+            newTicket.setSeat(seatInCinemaHall.get(i));
+            newTicket.setCost(seatInCinemaHall.get(i).getDefaultCost());
+            dataManager.save(newTicket);
         }
     }
-    private boolean checkSessionBeforeDelete(Session x) {//доделать пункт 5
-        List<Ticket> tickets = dataManager.load(Ticket.class)
-                .query("select c from Ticket c") //where c.cinemaHall = x.cinemaHall")
-                .list();
-        for (int i = 0; i < tickets.size(); i++) {
-            if (x.getCinemaHall() == tickets.get(i).getSession().getCinemaHall())
-                return true;
-        }
-        return false;
-    }
+
 
 
 }

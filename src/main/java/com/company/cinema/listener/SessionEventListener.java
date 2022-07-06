@@ -9,8 +9,10 @@ import io.jmix.core.event.EntityChangedEvent;
 import io.jmix.core.event.EntityLoadingEvent;
 import io.jmix.core.event.EntitySavingEvent;
 import io.jmix.ui.Dialogs;
+import io.jmix.ui.Notifications;
 import io.jmix.ui.screen.Subscribe;
 import org.codehaus.groovy.control.messages.Message;
+import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
@@ -25,22 +27,27 @@ public class SessionEventListener {
 
     @Autowired
     private DataManager dataManager;
+    @Autowired
     private Dialogs dialogs;
+    @Autowired
+    private ObjectProvider<Notifications> notificationsProvider;
 
     @EventListener
     public void onSessionChangedBeforeCommit(EntityChangedEvent<Session> event) {
-        //if (event.getType() == EntityChangedEvent.Type.DELETED){}
+        if (event.getType() == EntityChangedEvent.Type.DELETED){ //&& checkSessionBeforeDelete()
 
+        }
     }
 
 
 
-    @EventListener
-    public void onSessionSaving(EntitySavingEvent<Session> event){
-        //в load evente постоянно создются билеты(
-
-        //if (event.isNewEntity())
-        //    createTickets(event.getEntity());
+    private boolean checkSessionBeforeDelete(Session x) {//доделать пункт 5
+        List<Ticket> tickets = dataManager.load(Ticket.class)
+                .query("select c from Ticket c, Session_ x where c.session = x")
+                .list();
+        if (tickets.size() > 0)
+            return true;
+        return false;
     }
 
 }
