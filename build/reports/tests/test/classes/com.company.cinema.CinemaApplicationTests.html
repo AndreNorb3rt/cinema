@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CinemaApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CinemaApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.company.cinema.html">com.company.cinema</a> &gt; CinemaApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.372s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.372s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>15:42:16.561 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:42:16.572 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:42:16.608 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.company.cinema.CinemaApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+15:42:16.623 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.company.cinema.CinemaApplicationTests], using SpringBootContextLoader
+15:42:16.627 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.company.cinema.CinemaApplicationTests]: class path resource [com/company/cinema/CinemaApplicationTests-context.xml] does not exist
+15:42:16.628 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.company.cinema.CinemaApplicationTests]: class path resource [com/company/cinema/CinemaApplicationTestsContext.groovy] does not exist
+15:42:16.628 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.company.cinema.CinemaApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:42:16.629 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.company.cinema.CinemaApplicationTests]: CinemaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:42:16.688 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.company.cinema.CinemaApplicationTests]
+15:42:16.768 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\Андрей\eclipse-workspace\cinema\build\classes\java\main\com\company\cinema\CinemaApplication.class]
+15:42:16.769 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.company.cinema.CinemaApplication for test class com.company.cinema.CinemaApplicationTests
+15:42:16.872 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.company.cinema.CinemaApplicationTests]: using defaults.
+15:42:16.873 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+15:42:16.888 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3fc08eec, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5cad8b7d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7b02e036, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@25243bc1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1e287667, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2e6ee0bc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4201a617, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@467f77a5, org.springframework.test.context.event.EventPublishingTestExecutionListener@1bb9aa43, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@420bc288, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@df5f5c0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@308a6984, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@66b72664, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7a34b7b8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@58cd06cb]
+15:42:16.892 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@79ab3a71 testClass = CinemaApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6e5bfdfc testClass = CinemaApplicationTests, locations = '{}', classes = '{class com.company.cinema.CinemaApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@27953a83, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3d484181, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@37bd68c3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4721d212, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4c37b5b, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@420a85c4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2022-07-09 15:42:17.263  INFO 12252 --- [    Test worker] c.company.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 11.0.15 on DESKTOP with PID 12252 (started by Андрей in C:\Users\Андрей\eclipse-workspace\cinema)
+2022-07-09 15:42:17.264  INFO 12252 --- [    Test worker] c.company.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-07-09 15:42:19.559  INFO 12252 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Jmix repositories in DEFAULT mode.
+2022-07-09 15:42:19.588  INFO 12252 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 Jmix repository interfaces.
+2022-07-09 15:42:20.000  INFO 12252 --- [    Test worker] io.jmix.core.JmixModulesProcessor        : Using Jmix modules: [io.jmix.core, io.jmix.security, io.jmix.ui, io.jmix.securityui, io.jmix.data, io.jmix.datatools, io.jmix.uiexport, io.jmix.datatoolsui, io.jmix.eclipselink, io.jmix.localfs, io.jmix.securitydata, io.jmix.uidata, com.company.cinema]
+2022-07-09 15:42:20.005  INFO 12252 --- [    Test worker] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'com.vaadin.spring.VaadinConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2022-07-09 15:42:21.436  INFO 12252 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-09 15:42:21.564  INFO 12252 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-09 15:42:21.715  INFO 12252 --- [    Test worker] liquibase.database                       : Set default schema name to public
+2022-07-09 15:42:21.808  INFO 12252 --- [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2022-07-09 15:42:22.423  INFO 12252 --- [    Test worker] liquibase.changelog                      : Reading resource: com/company/cinema/liquibase/changelog/010-init-user.xml
+2022-07-09 15:42:22.440  INFO 12252 --- [    Test worker] liquibase.changelog                      : Reading resource: com/company/cinema/liquibase/changelog/2022/06/30-010-5af64b74.xml
+2022-07-09 15:42:22.465  INFO 12252 --- [    Test worker] liquibase.changelog                      : Reading resource: com/company/cinema/liquibase/changelog/2022/06/30-020-5af64b74.xml
+2022-07-09 15:42:22.478  INFO 12252 --- [    Test worker] liquibase.changelog                      : Reading resource: com/company/cinema/liquibase/changelog/2022/06/30-030-5af64b74.xml
+2022-07-09 15:42:22.488  INFO 12252 --- [    Test worker] liquibase.changelog                      : Reading resource: com/company/cinema/liquibase/changelog/2022/06/30-040-5af64b74.xml
+2022-07-09 15:42:22.498  INFO 12252 --- [    Test worker] liquibase.changelog                      : Reading resource: com/company/cinema/liquibase/changelog/2022/06/30-050-5af64b74.xml
+2022-07-09 15:42:22.511  INFO 12252 --- [    Test worker] liquibase.changelog                      : Reading resource: com/company/cinema/liquibase/changelog/2022/06/30-060-5af64b74.xml
+2022-07-09 15:42:22.522  INFO 12252 --- [    Test worker] liquibase.changelog                      : Reading resource: com/company/cinema/liquibase/changelog/2022/06/30-070-5af64b74.xml
+2022-07-09 15:42:22.534  INFO 12252 --- [    Test worker] liquibase.changelog                      : Reading resource: com/company/cinema/liquibase/changelog/2022/07/03-010-9b80f3e3.xml
+2022-07-09 15:42:22.544  INFO 12252 --- [    Test worker] liquibase.changelog                      : Reading resource: com/company/cinema/liquibase/changelog/2022/07/03-020-9b80f3e3.xml
+2022-07-09 15:42:22.632  INFO 12252 --- [    Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2022-07-09 15:42:22.770  INFO 12252 --- [    Test worker] liquibase.lockservice                    : Successfully released change log lock
+2022-07-09 15:42:23.236  INFO 12252 --- [    Test worker] i.j.c.i.s.JmixModulesClasspathScanner    : Classpath scan completed in 345 ms
+2022-07-09 15:42:23.612  INFO 12252 --- [    Test worker] io.jmix.core.impl.MetadataLoader         : Metadata initialized in 160 ms
+2022-07-09 15:42:23.890  INFO 12252 --- [    Test worker] i.j.d.i.JmixBaseEntityManagerFactoryBean : Using persistence.xml at com/company/cinema/persistence.xml for 'main' store
+2022-07-09 15:42:23.957  INFO 12252 --- [    Test worker] o.s.o.j.p.PersistenceUnitReader          : persistence.xml should be located inside META-INF directory; cannot determine persistence unit root URL for class path resource [com/company/cinema/persistence.xml]
+2022-07-09 15:42:24.619  INFO 12252 --- [    Test worker] i.j.d.impl.JmixEntityManagerFactoryBean  : Initialized JPA EntityManagerFactory for persistence unit 'main'
+2022-07-09 15:42:27.754  INFO 12252 --- [    Test worker] i.j.a.u.v.JmixVaadinServletConfiguration : Servlet will be mapped to URLs [/vaadinServlet/*, /VAADIN/*]
+2022-07-09 15:42:27.790  INFO 12252 --- [    Test worker] i.j.a.u.v.JmixVaadinServletConfiguration : Set servlet init parameter [productionMode] = [false]
+2022-07-09 15:42:27.791  INFO 12252 --- [    Test worker] i.j.a.u.v.JmixVaadinServletConfiguration : Set servlet init parameter [resourceCacheTime] = [3600]
+2022-07-09 15:42:27.791  INFO 12252 --- [    Test worker] i.j.a.u.v.JmixVaadinServletConfiguration : Set servlet init parameter [heartbeatInterval] = [300]
+2022-07-09 15:42:27.791  INFO 12252 --- [    Test worker] i.j.a.u.v.JmixVaadinServletConfiguration : Set servlet init parameter [closeIdleSessions] = [false]
+2022-07-09 15:42:28.499  INFO 12252 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure Or [Ant [pattern='/**']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ca160e0, org.springframework.security.web.context.SecurityContextPersistenceFilter@23e585e4, org.springframework.security.web.header.HeaderWriterFilter@4a670227, org.springframework.security.web.authentication.logout.LogoutFilter@7403cc2a, org.springframework.security.web.session.ConcurrentSessionFilter@6e6852c5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29315365, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@374ea446, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@2b5eeae4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e1ec8ed, org.springframework.security.web.session.SessionManagementFilter@36e0b509, org.springframework.security.web.access.ExceptionTranslationFilter@1a69c860, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34480422]
+2022-07-09 15:42:28.612  INFO 12252 --- [    Test worker] i.j.a.u.v.JmixVaadinServletConfiguration : Forwarding @SpringUI URLs from {/=org.springframework.web.servlet.mvc.ServletForwardingController@6425ba4e}
+2022-07-09 15:42:29.076  INFO 12252 --- [    Test worker] io.jmix.ui.sys.WebJarResourceResolver    : Loaded 376 WebJAR paths in 8 ms
+2022-07-09 15:42:29.212  INFO 12252 --- [    Test worker] c.company.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 12.283 seconds (JVM running for 13.64)
+2022-07-09 15:42:29.216  INFO 12252 --- [    Test worker] com.company.cinema.CinemaApplication     : Application started at http://localhost:null
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 9 июл. 2022 г., 15:42:29</p>
+</div>
+</div>
+</body>
+</html>
