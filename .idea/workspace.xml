@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d1d0646-8985-4226-9406-beb96df3a5fb" name="Changes" comment="Listener - deleting Session">
+    <list default="true" id="0d1d0646-8985-4226-9406-beb96df3a5fb" name="Changes" comment="Session creation limit - reloaded">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/ticket/ShowTicketsBrowse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/ticket/showTickets-browse.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -13,24 +15,34 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jmix/conf/com/company/cinema/listener/SessionEventListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jmix/conf/com/company/cinema/messages_en.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jmix/conf/com/company/cinema/messages_ru_RU.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jmix/conf/com/company/cinema/screen/session/SessionEdit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jmix/conf/com/company/cinema/screen/ticket/SessionTicketEdit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/listener/SessionEventListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/listener/SessionEventListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Session.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Ticket$JmixEntityEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Ticket$JmixEntityEntry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/entity/Ticket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/blank/BlankScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/session/SessionBrowse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/session/SessionBrowse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/session/SessionEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/session/SessionEdit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/hotDeployClasses/com/company/cinema/screen/blank/BlankScreen.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/build-info.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/build-info.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/com/company/cinema/orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/orm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/com/company/cinema/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/com/company/cinema/menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/com/company/cinema/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/messages_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/com/company/cinema/messages_ru_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/messages_ru_RU.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/client/client-browse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/client/client-browse.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/client/client-edit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/client/client-edit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/session/session-browse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/session/session-browse.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/ticket/ticket-browse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/ticket/ticket-browse.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/ticket/ticket-edit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/company/cinema/screen/ticket/ticket-edit.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/entitiesEnhancing/main/persistence/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/entitiesEnhancing/main/persistence/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/entitiesEnhancing/main/persistence/com/company/cinema/orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/entitiesEnhancing/main/persistence/com/company/cinema/orm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/entitiesEnhancing/resources/main/com/company/cinema/orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/entitiesEnhancing/resources/main/com/company/cinema/orm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/entitiesEnhancing/resources/main/com/company/cinema/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/entitiesEnhancing/resources/main/com/company/cinema/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/cinema/listener/SessionEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/listener/SessionEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/Session.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/entity/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/session/SessionBrowse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/session/SessionBrowse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/session/SessionEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/session/SessionEdit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/company/cinema/menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/company/cinema/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/messages_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/company/cinema/messages_ru_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/messages_ru_RU.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/client/client-browse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/client/client-browse.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/client/client-edit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/client/client-edit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/session/session-browse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/session/session-browse.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/ticket/ticket-browse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/ticket/ticket-browse.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/ticket/ticket-edit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/company/cinema/screen/ticket/ticket-edit.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656939986997</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Session creation limit - reloaded">
+      <created>1657506237574</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1657506237574</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,18 +262,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add listener" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add listener" />
+    <MESSAGE value="Session creation limit - reloaded" />
+    <option name="LAST_COMMIT_MESSAGE" value="Session creation limit - reloaded" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/cinema/screen/session/SessionEdit.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.company.cinema.entity.Seat" memberName="cinemaHall" />

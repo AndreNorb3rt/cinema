@@ -8,10 +8,6 @@
                     class="com.company.cinema.entity.Client">
             <fetchPlan extends="_base">
                 <property name="listOfTikets" fetchPlan="_base">
-                    <property name="session" fetchPlan="_base">
-                        <property name="cinemaHall" fetchPlan="_base"/>
-                        <property name="film" fetchPlan="_base"/>
-                    </property>
                     <property name="seat" fetchPlan="_base"/>
                 </property>
             </fetchPlan>

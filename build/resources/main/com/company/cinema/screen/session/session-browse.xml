@@ -58,6 +58,7 @@
                 <button id="createBtn" action="sessionsTable.create"/>
                 <button id="editBtn" action="sessionsTable.edit"/>
                 <button id="removeBtn" action="sessionsTable.remove"/>
+                <button id="showBtn" caption="msg://com.company.cinema.screen.session/showTickets.caption"/>
             </buttonsPanel>
         </groupTable>
         <hbox id="lookupActions" spacing="true" visible="false">

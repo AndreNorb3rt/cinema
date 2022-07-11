@@ -1,6 +1,7 @@
 package com.company.cinema.entity;
 
 import io.jmix.core.entity.annotation.JmixGeneratedValue;
+import io.jmix.core.metamodel.annotation.Composition;
 import io.jmix.core.metamodel.annotation.DependsOnProperties;
 import io.jmix.core.metamodel.annotation.InstanceName;
 import io.jmix.core.metamodel.annotation.JmixEntity;
@@ -8,6 +9,7 @@ import io.jmix.core.metamodel.annotation.JmixEntity;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.UUID;
 
 @JmixEntity
@@ -21,6 +23,10 @@ public class Session {
     @Column(name = "ID", nullable = false)
     @Id
     private UUID id;
+
+    @Composition
+    @OneToMany(mappedBy = "session")
+    private List<Ticket> tickets;
 
     @JoinColumn(name = "CINEMA_HALL_ID")
     @ManyToOne(fetch = FetchType.LAZY)
@@ -37,6 +43,14 @@ public class Session {
     @Column(name = "END_TIME", nullable = false)
     @NotNull
     private LocalDateTime endTime;
+
+    public List<Ticket> getTickets() {
+        return tickets;
+    }
+
+    public void setTickets(List<Ticket> tickets) {
+        this.tickets = tickets;
+    }
 
     public Film getFilm() {
         return film;

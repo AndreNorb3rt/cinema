@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://jmix.io/schema/ui/window"
         xmlns:c="http://jmix.io/schema/ui/jpql-condition"
-        caption="msg://ticketBrowse.caption"
+        caption="msg://showTicketsBrowse.caption"
         focusComponent="ticketsTable">
     <data readOnly="true">
         <collection id="ticketsDc"
                     class="com.company.cinema.entity.Ticket">
-            <fetchPlan extends="_base">
-                <property name="seat" fetchPlan="_base"/>
-                <property name="client" fetchPlan="_base"/>
-            </fetchPlan>
+            <fetchPlan extends="_base"/>
             <loader id="ticketsDl">
                 <query>
-                    <![CDATA[select e from Ticket e]]>
+                    <![CDATA[select e from Ticket e where e.session=:sessionX]]>
                 </query>
             </loader>
         </collection>
@@ -42,9 +39,7 @@
                     width="100%"
                     dataContainer="ticketsDc">
             <actions>
-                <action id="create" type="create"/>
                 <action id="edit" type="edit"/>
-                <action id="remove" type="remove"/>
             </actions>
             <columns>
                 <column id="seat"/>
@@ -54,9 +49,7 @@
             <simplePagination/>
             <buttonsPanel id="buttonsPanel"
                           alwaysVisible="true">
-                <button id="createBtn" action="ticketsTable.create"/>
                 <button id="editBtn" action="ticketsTable.edit"/>
-                <button id="removeBtn" action="ticketsTable.remove"/>
             </buttonsPanel>
         </groupTable>
         <hbox id="lookupActions" spacing="true" visible="false">

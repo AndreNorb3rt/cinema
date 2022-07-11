@@ -2,14 +2,19 @@
 <menu-config xmlns="http://jmix.io/schema/ui/menu">
 
     <menu id="application" caption="msg://com.company.cinema/menu.application" insertBefore="administration">
-        <item screen="User.browse" caption="msg://com.company.cinema.screen.user/UserBrowse.caption"/>
-        <item screen="themeSettingsScreen" caption="msg://io.jmix.ui.app.themesettings/themeSettings.caption"/>
+
+
         <item screen="CinemaHall.browse" caption="msg://com.company.cinema.screen.cinemahall/cinemaHallBrowse.menu"/>
         <item screen="Seat.browse" caption="msg://com.company.cinema.screen.seat/seatBrowse.menu"/>
         <item screen="Film.browse" caption="msg://com.company.cinema.screen.film/filmBrowse.menu"/>
         <item screen="Session_.browse" caption="msg://com.company.cinema.screen.session/sessionBrowse.menu"/>
         <item screen="Ticket.browse" caption="msg://com.company.cinema.screen.ticket/ticketBrowse.menu"/>
         <item screen="Client.browse" caption="msg://com.company.cinema.screen.client/clientBrowse.menu"/>
+        <item screen="ShowTickets.browse" caption="msg://com.company.cinema.screen.ticket/showTicketsBrowse.menu"/>
+    </menu>
+    <menu id="administration">
+        <item screen="User.browse" caption="msg://com.company.cinema.screen.user/UserBrowse.caption" insertBefore="ui_JmxConsoleScreen"/>
+        <item screen="themeSettingsScreen" caption="msg://io.jmix.ui.app.themesettings/themeSettings.caption" insertBefore="ui_JmxConsoleScreen"/>
     </menu>
 
 </menu-config>

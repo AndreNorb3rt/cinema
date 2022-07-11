@@ -1,6 +1,8 @@
 package com.company.cinema.entity;
 
+import io.jmix.core.DeletePolicy;
 import io.jmix.core.entity.annotation.JmixGeneratedValue;
+import io.jmix.core.entity.annotation.OnDeleteInverse;
 import io.jmix.core.metamodel.annotation.DependsOnProperties;
 import io.jmix.core.metamodel.annotation.InstanceName;
 import io.jmix.core.metamodel.annotation.JmixEntity;
@@ -11,9 +13,9 @@ import java.util.UUID;
 
 @JmixEntity
 @Table(name = "TICKET", indexes = {
-        @Index(name = "IDX_TICKET_SESSION_ID", columnList = "SESSION_ID"),
         @Index(name = "IDX_TICKET_SEAT_ID", columnList = "SEAT_ID"),
-        @Index(name = "IDX_TICKET_CLIENT_ID", columnList = "CLIENT_ID")
+        @Index(name = "IDX_TICKET_CLIENT_ID", columnList = "CLIENT_ID"),
+        @Index(name = "IDX_TICKET_SESSION_ID", columnList = "SESSION_ID")
 })
 @Entity
 public class Ticket {
@@ -22,10 +24,6 @@ public class Ticket {
     @Id
     private UUID id;
 
-    @JoinColumn(name = "SESSION_ID")
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Session session;
-
     @JoinColumn(name = "SEAT_ID")
     @ManyToOne(fetch = FetchType.LAZY)
     private Seat seat;
@@ -33,9 +31,23 @@ public class Ticket {
     @Column(name = "COST", precision = 19, scale = 2)
     private BigDecimal cost;
 
+    @OnDeleteInverse(DeletePolicy.CASCADE)
     @JoinColumn(name = "CLIENT_ID")
     @ManyToOne(fetch = FetchType.LAZY)
     private Client client;
+
+    @OnDeleteInverse(DeletePolicy.DENY)
+    @JoinColumn(name = "SESSION_ID", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    private Session session;
+
+    public Session getSession() {
+        return session;
+    }
+
+    public void setSession(Session session) {
+        this.session = session;
+    }
 
     public Client getClient() {
         return client;
@@ -51,14 +63,6 @@ public class Ticket {
 
     public void setSeat(Seat seat) {
         this.seat = seat;
-    }
-
-    public Session getSession() {
-        return session;
-    }
-
-    public void setSession(Session session) {
-        this.session = session;
     }
 
     public BigDecimal getCost() {
@@ -78,7 +82,7 @@ public class Ticket {
     }
 
     @InstanceName
-    @DependsOnProperties({"client", "cost", "seat", "session"})
+    @DependsOnProperties({"client", "cost", "seat"})
     public String getInstanceName() {
         return String.format("%s, %s, %s, %s", client, cost, seat, session);
     }

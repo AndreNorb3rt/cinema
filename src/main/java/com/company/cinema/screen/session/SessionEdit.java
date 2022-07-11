@@ -5,12 +5,12 @@ import com.company.cinema.entity.Ticket;
 import io.jmix.core.EntityStates;
 import io.jmix.ui.Notifications;
 import io.jmix.core.DataManager;
-import io.jmix.ui.component.Button;
+import io.jmix.ui.ScreenBuilders;
 import io.jmix.ui.screen.*;
 import com.company.cinema.entity.Session;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
+import java.awt.*;
 import java.util.List;
 
 @UiController("Session_.edit")
@@ -23,6 +23,8 @@ public class SessionEdit extends StandardEditor<Session> {
     private Notifications notifications;
     @Autowired
     private EntityStates entityStates;
+    @Autowired
+    private ScreenBuilders screenBuilders;
 
 
     @Subscribe
@@ -41,10 +43,7 @@ public class SessionEdit extends StandardEditor<Session> {
         }
     }
 
-    @Subscribe
-    public void onAfterCommitChanges(AfterCommitChangesEvent event) {
 
-    }
 
     private void createTickets(Session x) {
         List<Seat> seatInCinemaHall = dataManager.load(Seat.class)
@@ -58,6 +57,7 @@ public class SessionEdit extends StandardEditor<Session> {
             newTicket.setCost(seatInCinemaHall.get(i).getDefaultCost());
             dataManager.save(newTicket);
         }
+
     }
 
     private boolean checkSessionBeforeDelete(Session x) {//доделать пункт 5
