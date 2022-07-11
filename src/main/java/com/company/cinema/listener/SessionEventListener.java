@@ -22,9 +22,7 @@ public class SessionEventListener {
 
     @EventListener
     public void onSessionSaving(EntitySavingEvent<Session> event) {
-        if (event.isNewEntity()){
-            createTickets(event.getEntity());
-        }
+
     }
     private void createTickets(Session x){
         List<Seat> seatInCinemaHall = dataManager.load(Seat.class)
