@@ -10,6 +10,17 @@
             <loader id="ticketsDl">
                 <query>
                     <![CDATA[select e from Ticket e where e.session=:sessionX]]>
+                    <condition>
+                        <and>
+                            <c:jpql>
+                                <c:where>
+                                    (:isContainer = true and e.isContainer = true)
+                                    or (:isContainer = false and e.isContainer = false and e.isContainer is null)
+                                </c:where>
+
+                            </c:jpql>
+                        </and>
+                    </condition>
                 </query>
             </loader>
         </collection>
@@ -58,3 +69,4 @@
         </hbox>
     </layout>
 </window>
+

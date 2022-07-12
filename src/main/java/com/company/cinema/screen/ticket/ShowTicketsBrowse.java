@@ -14,21 +14,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 @LookupComponent("ticketsTable")
 public class ShowTicketsBrowse extends StandardLookup<Ticket> {
 
-    //@Autowired
+    @Autowired
     private Session sessionX;
     @Autowired
     private DataComponents dataComponents;
 
     private CollectionLoader<Ticket> ticketsDl;
 
-   /* private void createShowTicketsLoader(CollectionContainer<Ticket> container) {
-        Session s = session;
+   private void createShowTicketsLoader(CollectionContainer<Ticket> container) {
+        Session s = sessionX;
         ticketsDl = dataComponents.createCollectionLoader();
-        ticketsDl.setQuery("select e from Ticket e where e.seat.placeNumber = 2");
-        //ticketsDl.setParameter("x", s);
+        ticketsDl.setQuery("select e from Ticket e where e.session =: x");
+        ticketsDl.setParameter("x", s);
         ticketsDl.setContainer(container);
         ticketsDl.setDataContext(getScreenData().getDataContext());
-    }*/
+    }
 
     public void setSelectedSession(Session x) {
         sessionX = x;

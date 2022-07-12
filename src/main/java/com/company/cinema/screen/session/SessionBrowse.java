@@ -29,9 +29,11 @@ public class SessionBrowse extends StandardLookup<Session> {
     @Subscribe("showBtn")
     public void onShowBtnClick(Button.ClickEvent event) {
         Session selectedSession = sessionsTable.getSingleSelected();
-        ShowTicketsBrowse test = screens.create(ShowTicketsBrowse.class);
+        ShowTicketsBrowse test = screenBuilders.screen(this)
+                .withScreenClass(ShowTicketsBrowse.class)
+                .build();
         test.setSelectedSession(selectedSession);
-        screens.show(test);
+        test.show();
         /*screenBuilders.screen(this)
                 .withScreenClass(ShowTicketsBrowse.class)
                 .withOptions(new ShowTicketsBrowse(selectedSession))
