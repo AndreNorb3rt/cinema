@@ -6,8 +6,7 @@
         <instance id="ticketDc"
                   class="com.company.cinema.entity.Ticket">
             <fetchPlan extends="_base">
-                <property name="seat" fetchPlan="_base"/>
-                <property name="client" fetchPlan="_base"/>
+                <property name="session" fetchPlan="_base"/>
             </fetchPlan>
             <loader/>
         </instance>
@@ -38,6 +37,12 @@
                 </entityPicker>
                 <textField id="costField" property="cost"/>
                 <entityPicker id="clientField" property="client">
+                    <actions>
+                        <action id="entityLookup" type="entity_lookup"/>
+                        <action id="entityClear" type="entity_clear"/>
+                    </actions>
+                </entityPicker>
+                <entityPicker id="sessionField" property="session">
                     <actions>
                         <action id="entityLookup" type="entity_lookup"/>
                         <action id="entityClear" type="entity_clear"/>

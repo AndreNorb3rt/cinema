@@ -8,9 +8,9 @@
         <item screen="Seat.browse" caption="msg://com.company.cinema.screen.seat/seatBrowse.menu"/>
         <item screen="Film.browse" caption="msg://com.company.cinema.screen.film/filmBrowse.menu"/>
         <item screen="Session_.browse" caption="msg://com.company.cinema.screen.session/sessionBrowse.menu"/>
-        <item screen="Ticket.browse" caption="msg://com.company.cinema.screen.ticket/ticketBrowse.menu"/>
         <item screen="Client.browse" caption="msg://com.company.cinema.screen.client/clientBrowse.menu"/>
         <item screen="ShowTickets.browse" caption="msg://com.company.cinema.screen.ticket/showTicketsBrowse.menu"/>
+        <item screen="Ticket.browse" caption="msg://com.company.cinema.screen.ticket/ticketBrowse.menu"/>
     </menu>
     <menu id="administration">
         <item screen="User.browse" caption="msg://com.company.cinema.screen.user/UserBrowse.caption" insertBefore="ui_JmxConsoleScreen"/>

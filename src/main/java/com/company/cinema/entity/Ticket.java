@@ -24,6 +24,11 @@ public class Ticket {
     @Id
     private UUID id;
 
+    @OnDeleteInverse(DeletePolicy.CASCADE)
+    @JoinColumn(name = "SESSION_ID", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    private Session session;
+
     @JoinColumn(name = "SEAT_ID")
     @ManyToOne(fetch = FetchType.LAZY)
     private Seat seat;
@@ -35,11 +40,6 @@ public class Ticket {
     @JoinColumn(name = "CLIENT_ID")
     @ManyToOne(fetch = FetchType.LAZY)
     private Client client;
-
-    @OnDeleteInverse(DeletePolicy.DENY)
-    @JoinColumn(name = "SESSION_ID", nullable = false)
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    private Session session;
 
     public Session getSession() {
         return session;

@@ -14,13 +14,14 @@
                 <constraints nullable="false"/>
             </column>
             <column name="DESCRIPTION" type="VARCHAR(255)"/>
-            <column name="SEAT_ID" type="UUID">
-                <constraints nullable="false"/>
-            </column>
-            <column name="SESSION_ID" type="UUID">
-                <constraints nullable="false"/>
-            </column>
         </createTable>
+    </changeSet>
+    <changeSet id="14" author="cinema">
+        <loadData tableName="CINEMA_HALL" file="com/company/cinema/liquibase/changelog/data/cinemahall.csv" separator=";">
+            <column name="ID" type="UUID"/>
+            <column name="NAME" type="VARCHAR(255)"/>
+            <column name="DESCRIPTION" type="VARCHAR(255)"/>
+        </loadData>
     </changeSet>
     <changeSet id="2" author="cinema">
         <createTable tableName="CLIENT">
@@ -31,6 +32,12 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
+    </changeSet>
+    <changeSet id="19" author="cinema">
+        <loadData tableName="CLIENT" file="com/company/cinema/liquibase/changelog/data/client.csv" separator=";">
+            <column name="ID" type="UUID"/>
+            <column name="FULL_NAME" type="VARCHAR(255)"/>
+        </loadData>
     </changeSet>
     <changeSet id="3" author="cinema">
         <createTable tableName="FILM">
@@ -44,16 +51,22 @@
             <column name="DURATION" type="INT">
                 <constraints nullable="false"/>
             </column>
-            <column name="SESSION_ID" type="UUID">
-                <constraints nullable="false"/>
-            </column>
         </createTable>
+    </changeSet>
+    <changeSet id="17" author="cinema">
+        <loadData tableName="FILM" file="com/company/cinema/liquibase/changelog/data/film.csv" separator=";">
+            <column name="ID" type="UUID"/>
+            <column name="NAME" type="VARCHAR(255)"/>
+            <column name="DESCRIPTION" type="VARCHAR(255)"/>
+            <column name="DURATION" type="INT"/>
+        </loadData>
     </changeSet>
     <changeSet id="4" author="cinema">
         <createTable tableName="SEAT">
             <column name="ID" type="UUID">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="PK_SEAT"/>
             </column>
+            <column name="CINEMA_HALL_ID" type="UUID"/>
             <column name="ROW_NUMBER_" type="INT">
                 <constraints nullable="false"/>
             </column>
@@ -61,10 +74,16 @@
             <column name="DEFAULT_COST" type="DECIMAL(19, 2)">
                 <constraints nullable="false"/>
             </column>
-            <column name="TICKET_ID" type="UUID">
-                <constraints nullable="false"/>
-            </column>
         </createTable>
+    </changeSet>
+    <changeSet id="15" author="cinema">
+        <loadData tableName="SEAT" file="com/company/cinema/liquibase/changelog/data/seat.csv" separator=";">
+            <column name="ID" type="UUID"/>
+            <column name="CINEMA_HALL_ID" type="UUID"/>
+            <column name="ROW_NUMBER_" type="INT"/>
+            <column name="PLACE_NUMBER" type="INT"/>
+            <column name="DEFAULT_COST" type="DECIMAL(19, 2)"/>
+        </loadData>
     </changeSet>
     <changeSet id="5" author="cinema">
         <createTable tableName="SESSION_">
@@ -77,76 +96,41 @@
             <column name="END_TIME" type="DATETIME">
                 <constraints nullable="false"/>
             </column>
-            <column name="TICKET_ID" type="UUID">
-                <constraints nullable="false"/>
-            </column>
+            <column name="CINEMA_HALL_ID" type="UUID"/>
+            <column name="FILM_ID" type="UUID"/>
         </createTable>
+    </changeSet>
+    <changeSet id="18" author="cinema">
+        <loadData tableName="SESSION_" file="com/company/cinema/liquibase/changelog/data/session.csv" separator=";">
+            <column name="ID" type="UUID"/>
+            <column name="START_TIME" type="DATETIME"/>
+            <column name="END_TIME" type="DATETIME"/>
+            <column name="CINEMA_HALL_ID" type="UUID"/>
+            <column name="FILM_ID" type="UUID"/>
+        </loadData>
     </changeSet>
     <changeSet id="6" author="cinema">
         <createTable tableName="TICKET">
             <column name="ID" type="UUID">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="PK_TICKET"/>
             </column>
+            <column name="SESSION_ID" type="UUID"/>
             <column name="SEAT_ID" type="UUID"/>
             <column name="COST" type="DECIMAL(19, 2)"/>
-            <column name="CLIENT_ID" type="UUID">
-                <constraints nullable="false"/>
-            </column>
+            <column name="CLIENT_ID" type="UUID"/>
         </createTable>
     </changeSet>
-    <changeSet id="7" author="cinema">
-        <createIndex indexName="IDX_CINEMA_HALL_SEAT_ID" tableName="CINEMA_HALL">
-            <column name="SEAT_ID"/>
-        </createIndex>
+    <changeSet id="16" author="cinema">
+        <loadData tableName="TICKET" file="com/company/cinema/liquibase/changelog/data/ticket.csv" separator=";">
+            <column name="ID" type="UUID"/>
+            <column name="SESSION_ID" type="UUID"/>
+            <column name="SEAT_ID" type="UUID"/>
+            <column name="COST" type="DECIMAL(19, 2)"/>
+            <column name="CLIENT_ID" type="UUID"/>
+        </loadData>
+    </changeSet>
 
-        <addForeignKeyConstraint baseColumnNames="SEAT_ID" baseTableName="CINEMA_HALL"
-                                 constraintName="FK_CINEMA_HALL_ON_SEAT" referencedColumnNames="ID"
-                                 referencedTableName="SEAT"/>
-    </changeSet>
-    <changeSet id="8" author="cinema">
-        <createIndex indexName="IDX_CINEMA_HALL_SESSION_ID" tableName="CINEMA_HALL">
-            <column name="SESSION_ID"/>
-        </createIndex>
 
-        <addForeignKeyConstraint baseColumnNames="SESSION_ID" baseTableName="CINEMA_HALL"
-                                 constraintName="FK_CINEMA_HALL_ON_SESSION" referencedColumnNames="ID"
-                                 referencedTableName="SESSION_"/>
-    </changeSet>
-    <changeSet id="9" author="cinema">
-        <createIndex indexName="IDX_FILM_SESSION_ID" tableName="FILM">
-            <column name="SESSION_ID"/>
-        </createIndex>
 
-        <addForeignKeyConstraint baseColumnNames="SESSION_ID" baseTableName="FILM" constraintName="FK_FILM_ON_SESSION"
-                                 referencedColumnNames="ID" referencedTableName="SESSION_"/>
-    </changeSet>
-    <changeSet id="10" author="cinema">
-        <createIndex indexName="IDX_SEAT_TICKET_ID" tableName="SEAT">
-            <column name="TICKET_ID"/>
-        </createIndex>
 
-        <addForeignKeyConstraint baseColumnNames="TICKET_ID" baseTableName="SEAT" constraintName="FK_SEAT_ON_TICKET"
-                                 referencedColumnNames="ID" referencedTableName="TICKET"/>
-    </changeSet>
-    <changeSet id="11" author="cinema">
-        <createIndex indexName="IDX_SESSION_TICKET_ID" tableName="SESSION_">
-            <column name="TICKET_ID"/>
-        </createIndex>
-
-        <addForeignKeyConstraint baseColumnNames="TICKET_ID" baseTableName="SESSION_"
-                                 constraintName="FK_SESSION__ON_TICKET" referencedColumnNames="ID"
-                                 referencedTableName="TICKET"/>
-    </changeSet>
-    <changeSet id="12" author="cinema">
-        <createIndex indexName="IDX_TICKET_CLIENT_ID" tableName="TICKET">
-            <column name="CLIENT_ID"/>
-        </createIndex>
-
-        <addForeignKeyConstraint baseColumnNames="CLIENT_ID" baseTableName="TICKET" constraintName="FK_TICKET_ON_CLIENT"
-                                 referencedColumnNames="ID" referencedTableName="CLIENT"/>
-    </changeSet>
-    <changeSet id="13" author="cinema">
-        <addForeignKeyConstraint baseColumnNames="SEAT_ID" baseTableName="TICKET" constraintName="FK_TICKET_ON_SEAT"
-                                 referencedColumnNames="ID" referencedTableName="SEAT"/>
-    </changeSet>
 </databaseChangeLog>

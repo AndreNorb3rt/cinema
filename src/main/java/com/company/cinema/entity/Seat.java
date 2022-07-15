@@ -79,6 +79,6 @@ public class Seat {
     @InstanceName
     @DependsOnProperties({"rowNumber", "placeNumber"})
     public String getInstanceName() {
-        return String.format("%s, %s", rowNumber, placeNumber);
+        return String.format("%s, %s",  rowNumber, placeNumber);
     }
 }

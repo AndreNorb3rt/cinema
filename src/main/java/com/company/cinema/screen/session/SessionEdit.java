@@ -5,7 +5,9 @@ import com.company.cinema.entity.Ticket;
 import io.jmix.core.EntityStates;
 import io.jmix.ui.Notifications;
 import io.jmix.core.DataManager;
+import io.jmix.ui.RemoveOperation;
 import io.jmix.ui.ScreenBuilders;
+import io.jmix.ui.action.Action;
 import io.jmix.ui.screen.*;
 import com.company.cinema.entity.Session;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +27,8 @@ public class SessionEdit extends StandardEditor<Session> {
     private EntityStates entityStates;
     @Autowired
     private ScreenBuilders screenBuilders;
+    @Autowired
+    private RemoveOperation removeOperation;
 
 
     @Subscribe
@@ -40,9 +44,9 @@ public class SessionEdit extends StandardEditor<Session> {
                 event.resume();
                 createTickets(getEditedEntity());
             }
+            //if (RemoveOperation.BeforeActionPerformedEvent)
         }
     }
-
 
 
     private void createTickets(Session x) {

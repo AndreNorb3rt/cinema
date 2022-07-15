@@ -7,8 +7,7 @@
         <collection id="ticketsDc"
                     class="com.company.cinema.entity.Ticket">
             <fetchPlan extends="_base">
-                <property name="seat" fetchPlan="_base"/>
-                <property name="client" fetchPlan="_base"/>
+                <property name="session" fetchPlan="_base"/>
             </fetchPlan>
             <loader id="ticketsDl">
                 <query>
@@ -50,6 +49,7 @@
                 <column id="seat"/>
                 <column id="cost"/>
                 <column id="client"/>
+                <column id="session"/>
             </columns>
             <simplePagination/>
             <buttonsPanel id="buttonsPanel"
