@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1" author="cinema">
+        <addColumn tableName="CINEMA_HALL">
+            <column name="CREATED_BY" type="VARCHAR(255)"/>
+            <column name="CREATED_DATE" type="DATETIME"/>
+            <column name="DELETED_BY" type="VARCHAR(255)"/>
+            <column name="DELETED_DATE" type="DATETIME"/>
+            <column name="LAST_MODIFIED_BY" type="VARCHAR(255)"/>
+            <column name="LAST_MODIFIED_DATE" type="DATETIME"/>
+        </addColumn>
+    </changeSet>
+    <changeSet id="2" author="cinema">
+        <addColumn tableName="CLIENT">
+            <column name="CREATED_BY" type="VARCHAR(255)"/>
+            <column name="CREATED_DATE" type="DATETIME"/>
+            <column name="DELETED_BY" type="VARCHAR(255)"/>
+            <column name="DELETED_DATE" type="DATETIME"/>
+            <column name="LAST_MODIFIED_BY" type="VARCHAR(255)"/>
+            <column name="LAST_MODIFIED_DATE" type="DATETIME"/>
+        </addColumn>
+    </changeSet>
+    <changeSet id="3" author="cinema">
+        <addColumn tableName="FILM">
+            <column name="CREATED_BY" type="VARCHAR(255)"/>
+            <column name="CREATED_DATE" type="DATETIME"/>
+            <column name="DELETED_BY" type="VARCHAR(255)"/>
+            <column name="DELETED_DATE" type="DATETIME"/>
+            <column name="LAST_MODIFIED_BY" type="VARCHAR(255)"/>
+            <column name="LAST_MODIFIED_DATE" type="DATETIME"/>
+        </addColumn>
+    </changeSet>
+    <changeSet id="4" author="cinema">
+        <addColumn tableName="SEAT">
+            <column name="CREATED_BY" type="VARCHAR(255)"/>
+            <column name="CREATED_DATE" type="DATETIME"/>
+            <column name="DELETED_BY" type="VARCHAR(255)"/>
+            <column name="DELETED_DATE" type="DATETIME"/>
+            <column name="LAST_MODIFIED_BY" type="VARCHAR(255)"/>
+            <column name="LAST_MODIFIED_DATE" type="DATETIME"/>
+        </addColumn>
+    </changeSet>
+    <changeSet id="5" author="cinema">
+        <addColumn tableName="SESSION_">
+            <column name="CREATED_BY" type="VARCHAR(255)"/>
+            <column name="CREATED_DATE" type="DATETIME"/>
+            <column name="DELETED_BY" type="VARCHAR(255)"/>
+            <column name="DELETED_DATE" type="DATETIME"/>
+            <column name="LAST_MODIFIED_BY" type="VARCHAR(255)"/>
+            <column name="LAST_MODIFIED_DATE" type="DATETIME"/>
+        </addColumn>
+    </changeSet>
+    <changeSet id="6" author="cinema">
+        <addColumn tableName="TICKET">
+            <column name="CREATED_BY" type="VARCHAR(255)"/>
+            <column name="CREATED_DATE" type="DATETIME"/>
+            <column name="DELETED_BY" type="VARCHAR(255)"/>
+            <column name="DELETED_DATE" type="DATETIME"/>
+            <column name="LAST_MODIFIED_BY" type="VARCHAR(255)"/>
+            <column name="LAST_MODIFIED_DATE" type="DATETIME"/>
+        </addColumn>
+    </changeSet>
+    <changeSet id="7" author="cinema">
+        <addColumn tableName="CINEMA_HALL">
+            <column name="VERSION" type="INT"/>
+        </addColumn>
+
+        <addNotNullConstraint columnName="VERSION" defaultNullValue="1" tableName="CINEMA_HALL"/>
+    </changeSet>
+    <changeSet id="8" author="cinema">
+        <addColumn tableName="CLIENT">
+            <column name="VERSION" type="INT"/>
+        </addColumn>
+
+        <addNotNullConstraint columnName="VERSION" defaultNullValue="1" tableName="CLIENT"/>
+    </changeSet>
+    <changeSet id="9" author="cinema">
+        <addColumn tableName="FILM">
+            <column name="VERSION" type="INT"/>
+        </addColumn>
+
+        <addNotNullConstraint columnName="VERSION" defaultNullValue="1" tableName="FILM"/>
+    </changeSet>
+    <changeSet id="10" author="cinema">
+        <addColumn tableName="SEAT">
+            <column name="VERSION" type="INT"/>
+        </addColumn>
+
+        <addNotNullConstraint columnName="VERSION" defaultNullValue="1" tableName="SEAT"/>
+    </changeSet>
+    <changeSet id="11" author="cinema">
+        <addColumn tableName="SESSION_">
+            <column name="VERSION" type="INT"/>
+        </addColumn>
+
+        <addNotNullConstraint columnName="VERSION" defaultNullValue="1" tableName="SESSION_"/>
+    </changeSet>
+    <changeSet id="12" author="cinema">
+        <addColumn tableName="TICKET">
+            <column name="VERSION" type="INT"/>
+        </addColumn>
+
+        <addNotNullConstraint columnName="VERSION" defaultNullValue="1" tableName="TICKET"/>
+    </changeSet>
+</databaseChangeLog>
