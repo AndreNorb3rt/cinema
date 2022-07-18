@@ -14,12 +14,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/listener/SessionEventListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/listener/SessionEventListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/session/SessionEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/cinema/screen/session/SessionEdit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/hotDeployClasses/com/company/cinema/listener/SessionEventListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/hotDeployClasses/com/company/cinema/listener/SessionEventListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/build-info.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/build-info.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/cinema/listener/SessionEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/listener/SessionEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/session/SessionEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/cinema/screen/session/SessionEdit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +189,7 @@
       <workItem from="1657865051100" duration="52000" />
       <workItem from="1657892195489" duration="635000" />
       <workItem from="1658047858160" duration="1887000" />
-      <workItem from="1658130695729" duration="3649000" />
+      <workItem from="1658130695729" duration="4990000" />
     </task>
     <task id="LOCAL-00001" summary="Add listener">
       <created>1656939986997</created>
@@ -214,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657614658626</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="liquiebase">
+      <created>1658134683438</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658134683438</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,15 +268,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="liquiebase" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/cinema/listener/SessionEventListener.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.company.cinema.entity.Seat" memberName="cinemaHall" />

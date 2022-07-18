@@ -1,11 +1,11 @@
 package com.company.cinema.listener;
 
+import com.company.cinema.entity.Seat;
 import com.company.cinema.entity.Ticket;
 import com.company.cinema.entity.Session;
 import io.jmix.core.DataManager;
 import io.jmix.core.Id;
 import io.jmix.core.event.EntityChangedEvent;
-import io.jmix.ui.exception.DeletePolicyExceptionHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
@@ -21,21 +21,14 @@ public class SessionEventListener {
     @Autowired
     private DataManager dataManager;
 
-    @Autowired
-    private DeletePolicyExceptionHandler deletePolicyExceptionHandler;
-//@Autowired
-    //private Notifications notifications;
-
     @EventListener
     public void onSessionBeforeSaving(EntityChangedEvent<Session> event) {
-        //Session session;
 
         if (event.getType() == EntityChangedEvent.Type.DELETED){
             if(checkSessionBeforeDelete(event.getEntityId())){
                 throw new RuntimeException("На сеанс уже продан билет");
             }
         }
-
 
     }
     private boolean checkSessionBeforeDelete(Id<Session> x) {
