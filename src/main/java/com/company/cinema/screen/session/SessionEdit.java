@@ -25,10 +25,7 @@ public class SessionEdit extends StandardEditor<Session> {
     private Notifications notifications;
     @Autowired
     private EntityStates entityStates;
-    @Autowired
-    private ScreenBuilders screenBuilders;
-    @Autowired
-    private RemoveOperation removeOperation;
+
 
 
     @Subscribe
